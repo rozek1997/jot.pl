@@ -28,6 +28,10 @@ const config = {
             {
                 test: /\.css$/i,
                 use: [MiniExtractCssPlugin.loader, "css-loader"],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [MiniExtractCssPlugin.loader, "css-loader", "sass-loader"],
             }
         ]
     },
